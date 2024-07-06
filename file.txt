@@ -1,0 +1,6 @@
+20 10 output.txt .
+Rectangle 1 1 5 3 #
+Circle 10 5 3 @
+Line 15 1 18 8 *
+Point 5 5 +
+Light 0 0 *
