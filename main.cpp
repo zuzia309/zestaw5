@@ -4,7 +4,6 @@
 #include <string>
 #include <cmath>
 
-// Własna implementacja funkcji gcd
 int gcd(int a, int b) {
     return b == 0 ? a : gcd(b, a % b);
 }
@@ -62,7 +61,7 @@ private:
 
 class Figure {
 public:
-    virtual ~Figure() {}  // Virtual destructor for polymorphism
+    virtual ~Figure() {}
 
     virtual void draw(Canvas &canvas) = 0;
 };
@@ -256,7 +255,6 @@ int main(int argc, char *argv[]) {
     std::string outputFilename = "output.txt";
     canvas.saveToFile(outputFilename);
 
-    // Clean up allocated memory
     for (Figure *figure : figures) {
         delete figure;
     }
